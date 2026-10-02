@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-size: 18px;
+    background-color: #f2f6f5;
+}
+
+main {
+    color: #333333;
+}
+
+header {
+    background-color: #2f6f5e;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    background-color: #dce9e5;
+    padding: 10px;
+}
+
+footer {
+    color: #777777;
+}
+
+/* ID selector */
+#important {
+    color: #b23a48;
+}
+
+/* Class selector */
+.deemphasize {
+    color: #777777;
+}
+
+/* Span selector */
+span {
+    color: #b23a48;
+    font-weight: bold;
+}
