@@ -1,0 +1,27 @@
+
+body {
+    font-family: Arial;
+    background-color: lightgray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.column {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.my-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.my-grid div {
+    background-color: lightgreen;
+    padding: 20px;
+}
