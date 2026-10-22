@@ -1,0 +1,37 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.columns {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.column {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    border: 2px solid darkblue;
+}
+
+.things {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 20px;
+}
+
+.box {
+    background-color: lightyellow;
+    border: 2px solid orange;
+    padding: 20px;
+    flex: 1;
+}
