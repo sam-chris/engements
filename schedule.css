@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: lightblue;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
