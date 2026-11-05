@@ -11,7 +11,7 @@
 <h1>Sam Nadeem</h1>
 <h2>My Class Schedule</h2>
 
-<table border="1">
+<table>
     <caption>My College Classes</caption>
 
     <thead>
@@ -26,11 +26,11 @@
     </thead>
 
     <tbody>
-        <tr>
+        <tr class="semester">
             <th colspan="6">Fall 2026</th>
         </tr>
 
-        <tr>
+        <tr class="class-row">
             <td rowspan="2">CS</td>
             <td>140</td>
             <td>Computer Science</td>
@@ -39,7 +39,7 @@
             <td>3</td>
         </tr>
 
-        <tr>
+        <tr class="class-row">
             <td>202</td>
             <td>Computer Science</td>
             <td>Portable 1</td>
@@ -49,7 +49,10 @@
 
         <!-- Add your IT, ENTR, and ANTH rows here -->
 
-        <tr>
+    </tbody>
+
+    <tbody>
+        <tr class="semester">
             <th colspan="6">Spring 2027</th>
         </tr>
 
@@ -63,6 +66,32 @@
         </tr>
     </tfoot>
 </table>
+
+<h2>Questions</h2>
+
+<p>
+    <strong>1. Why don't we use the border attribute?</strong>
+    We don't use the border attribute because CSS is a better
+    way to style a table. CSS gives us more control over the
+    borders, colors, spacing, and overall appearance of the table.
+</p>
+
+<p>
+    <strong>2. What is the easiest way to color every other row
+    a different color?</strong>
+    The easiest way is to use the CSS nth-child() structural
+    pseudo-class. It automatically selects alternating rows
+    without adding a class to every row.
+</p>
+
+<p>
+    <strong>3. What does the value in the parentheses of your
+    structural pseudo-class mean?</strong>
+    The value tells CSS which elements to select.
+    The value even selects the second, fourth, and sixth elements.
+    Another value is odd, which selects the first, third,
+    and fifth elements.
+</p>
 
 </body>
 </html>
