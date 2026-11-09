@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <header>
+    <h1>Sam's Web Site </h1>
+  </header>
+
+  <main>
+    <form action="formprocessing.html" method="get">
+<div class="form-row">
+      <input type="text" name="fullname">
+</div>
+<div class="form-row">
+
+      <input type="text" name="email">
+</div>
+<div class="form-row">
+      <input type="password" name="pass">
+</div>
+<div class="form-row">
+      <input type="submit">
+</div>
+    </form>
+
+    <h2>Form Questions</h2>
+
+    <p>1. The action attribute tells the form where to send the information when the user submits it.</p>
+
+    <p>2. The method attribute tells the form how to send the information, either using GET or POST.</p>
+
+    <p>3. GET sends the form information in the URL, while POST sends the information in the request body. POST is better for sensitive information, but you still need HTTPS.</p>
+
+    <p>4. A pre-set value is information already filled in, while a placeholder is a hint that disappears when you type. A text box uses the value attribute. A textarea puts the text between its opening and closing tags. A select box uses the selected attribute on an option. A checkbox and radio button use checked to be selected automatically. Placeholders work with text boxes and textareas, but not select boxes, checkboxes, or radio buttons.</p>
+
+    <p>5. HTML5 added these input types: email, url, tel, search, number, range, color, date, time, datetime-local, month, and week. It also added new form controls like datalist, output, and progress. In my form, I used text, password, and submit, which were already available before HTML5.</p>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Sam Chris 
+  </footer>
+</body>
+</html>
