@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+  <header>
+    <h1>Sam's Web Design Class</h1>
+  </header>
+
+  <main>
+    <form action="formprocessing.html" method="post">
+
+      <div class="form-row">
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="samchris1@byuh.edu">
+      </div>
+
+      <div class="form-row">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass">
+      </div>
+
+      <div class="form-row">
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value="">------</option>
+          <option value="HI">Hawaii</option>
+          <option value="CA">California</option>
+          <option value="UT">Utah</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>
+          <input type="checkbox" name="remember"> Remember Me?
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>
+          <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>
+      </div>
+
+      <div class="form-row">
+        <input type="submit" value="Sign Up">
+      </div>
+
+    </form>
+
+
+<h2>Questions</h2>
+
+<p>1. You can style a form by changing the colors, fonts, sizes, and spacing using CSS.</p>
+
+<p>2. The professor likes flex because it makes it easy to line things up and add space.</p>
+
+<p>3. A good mobile form is simple, easy to read, and easy to use on a phone.</p>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Sam
+  </footer>
+</body>
+</html>
