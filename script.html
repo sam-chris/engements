@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+  <header>
+    <h1>Sam's Web Design Class</h1>
+  </header>
+
+  <main>
+    <form action="formprocessing.html" method="post">
+
+      <div class="form-row">
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="samchris1@byuh.edu">
+      </div>
+
+      <div class="form-row">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass">
+      </div>
+
+      <div class="form-row">
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value="">------</option>
+          <option value="HI">Hawaii</option>
+          <option value="CA">California</option>
+          <option value="UT">Utah</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>
+          <input type="checkbox" name="remember"> Remember Me?
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>
+          <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>
+      </div>
+
+      <div class="form-row">
+        <input type="submit" value="Sign Up">
+      </div>
+
+    </form>
+
+
+<h2>Questions</h2>
+
+<p>1. JavaScript is a programming language that makes websites interactive. It was named JavaScript because Java was popular at the time.</p>
+
+<p>2. You can run JavaScript in a web browser or outside a browser using Node.js.</p>
+
+<p>3. jQuery is a JavaScript library that makes coding easier. It is still used today, but not as popular as before.</p>
+
+<p>4. React is the most popular front-end JavaScript library today.</p>
+
+<p>5. We use event.preventDefault() to stop the form from submitting. This keeps the page from refreshing so we can check the user's answers first.</p>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Sam
+  </footer>
+</body>
+</html>
+
+
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Form Submitted");
+
+    const fullname = document.getElementById('fullname').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('pass').value;
+    const age = document.getElementById('bdate').value;
+
+    if (!fullname || !email) {
+      alert("You need a name and email.");
+      return;
+    }
+
+    if (!age || age < 18) {
+      alert("You need to be 18");
+      return;
+    }
+
+    const formData = {
+      name: fullname,
+      email: email,
+      password: password,
+      age: age
+    };
+
+    console.log(formData);
+  });
+</script>
