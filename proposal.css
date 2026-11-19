@@ -1,0 +1,38 @@
+
+body {
+    background-color: lightblue;
+    font-family: Arial;
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+    background-color: green;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: darkblue;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    background-color: white;
+    padding: 20px;
+}
+
+li {
+    margin: 5px;
+}
+
+a {
+    color: blue;
+}
