@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form3.css">
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Sam's Web Design Class</h1>
+  </header>
+
+  <main>
+    <form id="myForm" action="formprocessing.html" method="post">
+
+      <div class="form-row">
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="samchris1@byuh.edu">
+      </div>
+
+      <div class="form-row">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass">
+      </div>
+
+      <div class="form-row">
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value="">------</option>
+          <option value="HI">Hawaii</option>
+          <option value="CA">California</option>
+          <option value="UT">Utah</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>
+          <input type="checkbox" name="remember"> Remember Me?
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>
+          <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>
+      </div>
+
+      <div class="form-row">
+        <input type="submit" value="Sign Up">
+      </div>
+
+    </form>
+
+    <p id="message"></p>
+
+    <h2>Questions</h2>
+
+    <h3>1. What is AJAX?</h3>
+    <p>AJAX lets a website send and receive data from a server without reloading the page.</p>
+
+    <h3>2. Why do you put your JS code in a separate file?</h3>
+    <p>It keeps the HTML organized and makes the JavaScript easier to read, edit, and debug.</p>
+
+    <h3>3. How do you use DevTools to debug your JavaScript? How do you find the line number of an error?</h3>
+    <p>I open DevTools by pressing F12 and check the Console for errors. The error message shows the file and line number where the problem happened. I can click it to find the error.</p>
+
+    <h3>4. Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.</h3>
+    <p>Yes, the ids match. My ids are myForm, fullname, email, pass, state, comments, and message. I fixed the mismatched ids and removed the missing bdate reference. I will check the Console for errors when testing the form.</p>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Sam
+  </footer>
+</body>
+</html>
